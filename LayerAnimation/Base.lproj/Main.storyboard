@@ -20,15 +20,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first" translatesAutoresizingMaskIntoConstraints="NO" id="Qz1-PE-UBD">
                                 <rect key="frame" x="13" y="72" width="30" height="30"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVB-vt-fej">
-                                <rect key="frame" x="5" y="481" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onOpacity:" destination="9pv-A4-QxB" eventType="touchUpInside" id="C7j-K9-mBT"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84u-r1-uoo">
-                                <rect key="frame" x="72" y="481" width="41" height="30"/>
+                                <rect key="frame" x="89" y="481" width="41" height="30"/>
                                 <state key="normal" title="group"/>
                                 <connections>
                                     <action selector="onGroup:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Mfe-rW-d1t"/>
@@ -46,6 +39,20 @@
                                 <state key="normal" title="transition"/>
                                 <connections>
                                     <action selector="onTransition:" destination="9pv-A4-QxB" eventType="touchUpInside" id="urb-6O-7FV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYY-jA-ue3">
+                                <rect key="frame" x="70" y="434" width="45" height="30"/>
+                                <state key="normal" title="Spring"/>
+                                <connections>
+                                    <action selector="onSpring:" destination="9pv-A4-QxB" eventType="touchUpInside" id="1h2-3C-STo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVB-vt-fej">
+                                <rect key="frame" x="7" y="481" width="67" height="30"/>
+                                <state key="normal" title="animation"/>
+                                <connections>
+                                    <action selector="onOpacity:" destination="9pv-A4-QxB" eventType="touchUpInside" id="C7j-K9-mBT"/>
                                 </connections>
                             </button>
                         </subviews>

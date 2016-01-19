@@ -82,6 +82,20 @@
     [self.myImageView.layer addAnimation:keyFrame forKey:nil];
 }
 
+- (IBAction)onSpring:(id)sender {
+    CASpringAnimation* spring = [CASpringAnimation animationWithKeyPath:@"position.x"];
+    
+    //    spring.mass = 10;
+    spring.initialVelocity = 10;
+    spring.fromValue = @(self.myImageView.layer.position.x);
+    spring.toValue = @(self.myImageView.layer.position.x + 50);
+    spring.duration = spring.settlingDuration;
+    
+    
+    [self.myImageView.layer addAnimation:spring forKey:nil];
+    
+}
+
 - (IBAction)onTransition:(id)sender {
 //    CATransform3D transition = CATransform3DMakeRotation(45, 1, 1, 1);
 //    self.myImageView.layer.transform = transition;
